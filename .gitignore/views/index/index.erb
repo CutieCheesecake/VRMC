@@ -1,0 +1,90 @@
+<!--navigation -->
+<!-- Static navbar -->
+<div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Weight Tracker</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+      <!--menu login li start here-->
+        <li class="dropdown">
+          <a href="#" class=" dropdown-toggle" data-toggle="dropdown">Sign in</a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-login-box animated fadeInUp">
+            <%= erb :'partials/sign_in_form', :layout => false %>
+          </div>
+        </li> <!--menu login li end here-->
+
+        <!--menu sign up li start here-->
+        <li class="dropdown">
+          <a href="#" class=" dropdown-toggle" data-toggle="dropdown">Sign up</a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-login-box animated fadeInUp">
+            <%= erb :'partials/sign_up_form', :layout => false %>
+          </div>
+        </li> <!--menu sign up li end here-->
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--container-->
+</div><!--navbar-default-->
+
+<!--parallax background no slider-->
+<section id="home-parallax" class="parallax" data-stellar-background-ratio="0.5">
+  <div class="container text-center">
+    <h1 class="typed-text">Weight Tracker helps you become<br/> 
+    <span class="element" data-elements="Fit, Healthy, Amazing, Kickass"></span>
+    </h1>
+    <p class="lead"><strong>A simple app that helps you keep track of your weight</strong></p>
+    <span class="parallax-buttons">
+      <span>
+        <!--sign in button-->
+        <%= erb :'partials/sign_in_modal_form', :layout => false %>
+      </span>
+      
+      <span>
+        <!--sign up button-->
+        <%= erb :'partials/sign_up_modal_form', :layout => false %>
+      </span>
+      
+    </span>
+  </div>
+</section><!--parallax-background-->
+
+<div class="intro-text-1">
+  <div class="container">
+    <div class="row text-center">
+        <h4 class="animated slideInDown">WEIGHT TRACKER
+        </h4>
+        <p>
+          Your simple weight journal tracker.
+        </p>                   
+    </div>
+  </div>
+</div> <!--intro text end-->
+
+<div class="divide70"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="center-heading">
+        <h2 class="wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="100ms">Welcome to WEIGHT TRACKER</h2>
+        <span class="center-line"></span>
+        <p class="sub-text wow animated fadeIn" data-wow-duration="700ms" data-wow-delay="300ms">
+          We want to present you a simple and and easy to use weight tracker tool that keeps track of your weight daily like a journal. You can set a goal and check your current BMI. WEIGHT TRACKER also show you the history data that you can visually see your progress and help you manage your weight more effectively.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+        
